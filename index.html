@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bruno's Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script src="./js/index.js"></script>
+
+    <form name="calcForm" method="POST" action="">
+        <fieldset>
+            <legend>Bruno's Calculator</legend>
+
+            <input type="text" name="visor" id="visor"/>
+
+            <table id="calc">
+                <tr>
+                    <td><input type="button" name="numero7" class="num" value="7" onclick="calcNum(7)"/></td>
+                    <td><input type="button" name="numero8" class="num" value="8" onclick="calcNum(8)"/></td>
+                    <td><input type="button" name="numero9" class="num" value="9" onclick="calcNum(9)"/></td>
+                    <td><input type="button" name="somar" class="operacao" value="+" onclick="calcParse('somar')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="numero4" class="num" value="4" onclick="calcNum(4)"/></td>
+                    <td><input type="button" name="numero5" class="num" value="5" onclick="calcNum(5)"/></td>
+                    <td><input type="button" name="numero6" class="num" value="6" onclick="calcNum(6)"/></td>
+                    <td><input type="button" name="subtrair" class="operacao" value="-" onclick="calcParse('subtrair')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="numero1" class="num" value="1" onclick="calcNum(1)"/></td>
+                    <td><input type="button" name="numero2" class="num" value="2" onclick="calcNum(2)"/></td>
+                    <td><input type="button" name="numero3" class="num" value="3" onclick="calcNum(3)"/></td>
+                    <td><input type="button" name="multiplicar" class="operacao" value="x" onclick="calcParse('multiplicar')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="numero0" class="num" value="0" onclick="calcNum(0)"/></td>
+                    <td><input type="button" name="limpar" class="num" value="AC" onclick="calcClear()"/></td>
+                    <td><input type="button" name="igual" class="num" value="=" onclick="calcParse('resultado')"/></td>
+                    <td><input type="button" name="dividir" class="operacao" value="÷" onclick="calcParse('dividir')"/></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
